@@ -43,7 +43,7 @@ class Apay
         return $alipay->send();// laravel 框架中请直接 `return $alipay`
     }
 
-    public function return()
+    public function verify()
     {
         $data = Pay::alipay($this->config)->verify(); // 是的，验签就这么简单！
 
